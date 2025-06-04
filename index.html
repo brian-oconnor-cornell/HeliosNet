@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HeliosNet | Smarter Solar Insights</title>
+    <meta name="description" content="HeliosNet helps homeowners and installers unlock deeper, data‑driven insights from their solar arrays—faster." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="HeliosNet | Smarter Solar Insights" />
+    <meta property="og:description" content="Unlock deeper, data‑driven insights from your solar arrays—faster." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://heliosnet.github.io/" />
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/9919?s=200&v=4" />
+
+    <style>
+      :root {
+        --clr-bg: #f9fafb;
+        --clr-primary: #ffb703;
+        --clr-accent: #023047;
+        --clr-text: #1f2937;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+          Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        background: var(--clr-bg);
+        color: var(--clr-text);
+        line-height: 1.6;
+      }
+
+      header {
+        background: var(--clr-accent);
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+
+      nav a {
+        color: #fff;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 5rem 1rem 4rem;
+      }
+
+      .hero h2 {
+        font-size: clamp(2rem, 6vw, 3.5rem);
+        margin-bottom: 1rem;
+        color: var(--clr-accent);
+      }
+
+      .hero p {
+        max-width: 45ch;
+        margin-inline: auto;
+        font-size: 1.125rem;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 2rem;
+        background: var(--clr-primary);
+        color: var(--clr-accent);
+        padding: 0.9rem 2rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.25s ease;
+      }
+
+      .btn:hover {
+        background: #ffa100;
+      }
+
+      .features {
+        display: grid;
+        gap: 2rem;
+        padding: 3rem 1rem 5rem;
+        max-width: 1100px;
+        margin-inline: auto;
+      }
+
+      .feature {
+        background: #fff;
+        padding: 2rem 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
+        text-align: center;
+      }
+
+      .feature h3 {
+        margin-top: 0;
+        color: var(--clr-accent);
+      }
+
+      footer {
+        background: var(--clr-accent);
+        color: #fff;
+        text-align: center;
+        padding: 1.5rem 1rem;
+      }
+
+      footer a {
+        color: var(--clr-primary);
+        text-decoration: none;
+      }
+
+      @media (min-width: 768px) {
+        .features {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HeliosNet</h1>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Solar data, super‑charged.</h2>
+      <p>
+        HeliosNet turns raw panel outputs into actionable insights—so you can
+        optimize performance, predict maintenance, and maximize ROI.
+      </p>
+      <a class="btn" href="#contact">Join the early access list</a>
+    </section>
+
+    <section id="features" class="features">
+      <article class="feature">
+        <h3>Real‑time Analytics</h3>
+        <p>Monitor production output down to the minute and spot anomalies before they cost you.</p>
+      </article>
+      <article class="feature">
+        <h3>Predictive Alerts</h3>
+        <p>AI‑driven forecasts flag likely panel degradation up to 30 days in advance.</p>
+      </article>
+      <article class="feature">
+        <h3>Portfolio‑Wide Reporting</h3>
+        <p>Consolidate multiple arrays into a single dashboard for holistic visibility.</p>
+      </article>
+    </section>
+
+    <section id="contact" style="text-align:center;padding-bottom:4rem;">
+      <h2>Ready to shine?</h2>
+      <p>
+        Drop us a line at <a href="mailto:hello@heliosnet.io">hello@heliosnet.io</a>
+        to learn more or request a demo.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        © <span id="year"></span> HeliosNet • Built with ❤ on GitHub Pages •
+        <a href="https://github.com/heliosnet">Source&nbsp;Code</a>
+      </p>
+    </footer>
+
+    <script>
+      // Update year automatically
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
